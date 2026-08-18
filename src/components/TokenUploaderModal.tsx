@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { useTokenStore } from '@/lib/token-store';
 import { DesignToken } from '@/types/tokens';
-import yaml from 'js-yaml';
+import * as yaml from 'js-yaml';
 import { X, Upload, FileCode, CheckCircle2, AlertTriangle, Sparkles } from 'lucide-react';
 import confetti from 'canvas-confetti';
 

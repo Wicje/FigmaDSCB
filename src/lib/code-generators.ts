@@ -1,5 +1,5 @@
 import { DesignToken } from '@/types/tokens';
-import yaml from 'js-yaml';
+import * as yaml from 'js-yaml';
 
 export function generateCssVariablesCode(tokens: DesignToken[]): string {
   const lines = tokens.map((token) => `  ${token.cssVariable}: ${token.value};`);
