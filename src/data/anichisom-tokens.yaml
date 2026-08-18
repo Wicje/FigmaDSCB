@@ -1,0 +1,167 @@
+brand:
+  name: ANICHISOM
+  tagline: Architecting Next-Generation Digital Experiences
+  version: 1.0.0
+  primaryColor: '#00F0FF'
+  secondaryColor: '#7000FF'
+  fontHeadline: Space Grotesk
+  fontBody: Inter
+  fontMono: JetBrains Mono
+
+tokens:
+  - id: logo-primary-monogram
+    name: Primary Faceted Monogram
+    category: logos
+    subcategory: Core Logos
+    description: Primary ANICHISOM symbol featuring geometric cyber faceting with cyan gradient highlight.
+    value: "<svg width='120' height='120' viewBox='0 0 120 120' fill='none' xmlns='http://www.w3.org/2000/svg'><polygon points='60,10 105,40 105,80 60,110 15,80 15,40' fill='#0A1128' stroke='#00F0FF' stroke-width='4'/><path d='M60 25 L85 85 H70 L60 60 L50 85 H35 Z' fill='url(#cyanGlow)'/><polygon points='60,38 72,66 48,66' fill='#00F0FF'/><defs><linearGradient id='cyanGlow' x1='0' y1='0' x2='1' y2='1'><stop offset='0%' stop-color='#00F0FF'/><stop offset='100%' stop-color='#7000FF'/></linearGradient></defs></svg>"
+    cssVariable: "--an-logo-primary"
+    type: logo
+    status: stable
+    tags: [logo, monogram, brand, symbol, primary]
+    version: 1.0.0
+
+  - id: logo-wordmark
+    name: ANICHISOM Cyber Wordmark
+    category: logos
+    subcategory: Typography Logos
+    description: Custom high-tech wordmark with tracked letterforms and electric cyan period accent.
+    value: ANICHISOM
+    cssVariable: "--an-logo-wordmark"
+    type: logo
+    status: stable
+    tags: [logo, wordmark, typography, text]
+    version: 1.0.0
+
+  - id: color-obsidian
+    name: Obsidian Black
+    category: colors
+    subcategory: Core Brand
+    description: Deep space background black used as primary Canvas color in dark mode.
+    value: '#090A0F'
+    cssVariable: "--an-color-obsidian"
+    tailwindClass: "bg-[#090A0F]"
+    type: color
+    status: stable
+    contrastRatio: 1.0
+    wcagPass: true
+    tags: [color, background, dark, obsidian, black]
+
+  - id: color-cyber-cyan
+    name: Cyber Cyan
+    category: colors
+    subcategory: Core Brand
+    description: Primary high-contrast brand accent for interactive elements, focus states, and primary CTAs.
+    value: '#00F0FF'
+    cssVariable: "--an-color-cyan"
+    tailwindClass: "bg-[#00F0FF]"
+    type: color
+    status: stable
+    contrastRatio: 14.8
+    wcagPass: true
+    tags: [color, cyan, primary, accent, neon, cta]
+
+  - id: color-neon-violet
+    name: Neon Violet
+    category: colors
+    subcategory: Core Brand
+    description: Secondary energy accent color for interactive hover states and gradient pairs.
+    value: '#7000FF'
+    cssVariable: "--an-color-violet"
+    tailwindClass: "bg-[#7000FF]"
+    type: color
+    status: stable
+    contrastRatio: 4.2
+    wcagPass: true
+    tags: [color, violet, purple, secondary, neon]
+
+  - id: color-hyper-lime
+    name: Hyper Lime
+    category: colors
+    subcategory: Core Brand
+    description: High-energy status accent for success badges, active indicators, and highlight markers.
+    value: '#00FF66'
+    cssVariable: "--an-color-lime"
+    tailwindClass: "bg-[#00FF66]"
+    type: color
+    status: stable
+    contrastRatio: 13.9
+    wcagPass: true
+    tags: [color, lime, green, highlight, active]
+
+  - id: font-family-display
+    name: 'Font Family: Space Grotesk'
+    category: typography
+    subcategory: Font Families
+    description: Futuristic geometric display typography used for all major headers and feature callouts.
+    value: "'Space Grotesk', system-ui, sans-serif"
+    cssVariable: "--an-font-display"
+    type: typography
+    status: stable
+    tags: [font, typography, display, headline, space-grotesk]
+
+  - id: spacing-lg
+    name: Spacing LG (16px / 1.0rem)
+    category: spacing
+    subcategory: Tokens
+    description: Base container padding and grid item gap.
+    value: 16px
+    cssVariable: "--an-space-lg"
+    type: spacing
+    status: stable
+    tags: [spacing, lg, 16px, base]
+
+  - id: shadow-cyan-glow
+    name: 'Shadow: Cyber Cyan Glow'
+    category: shadows
+    subcategory: Glows
+    description: Signature neon cyan glow effect for focused buttons and active cards.
+    value: 0 0 20px rgba(0, 240, 255, 0.4)
+    cssVariable: "--an-shadow-cyan-glow"
+    type: shadow
+    status: stable
+    tags: [shadow, glow, cyan, neon, focus]
+
+  - id: button-cyber-primary
+    name: 'Button: Cyber Primary CTA'
+    category: buttons
+    subcategory: Primary Buttons
+    description: High-visibility primary action button with cyan backdrop, obsidian text, and animated glow hover.
+    value: Primary Action
+    cssVariable: "--an-btn-primary"
+    type: component
+    status: stable
+    tags: [button, cta, primary, cyan, action]
+
+  - id: card-cyber-glow
+    name: 'Card: Faceted Cyber Panel'
+    category: cards
+    subcategory: Panels
+    description: Glass-like container card featuring deep sapphire background, slate border, and hover glow accent.
+    value: Card Container Spec
+    cssVariable: "--an-card-cyber"
+    type: component
+    status: stable
+    tags: [card, panel, container, sapphire, glass]
+
+  - id: badge-status-dot
+    name: 'Badge: Glowing Status Pill'
+    category: badges
+    subcategory: Status Badges
+    description: Compact pill badge with pulsing LED status dot for active system states.
+    value: LIVE SYSTEM
+    cssVariable: "--an-badge-status"
+    type: component
+    status: stable
+    tags: [badge, pill, status, indicator, live]
+
+  - id: input-cyber-textfield
+    name: 'Input: Cyber Text Field'
+    category: inputs
+    subcategory: Form Controls
+    description: Dark text input field with cyan focus outline, jetbrains mono typography option, and icon slot.
+    value: Interactive Text Input
+    cssVariable: "--an-input-text"
+    type: component
+    status: stable
+    tags: [input, textfield, form, search, cyber]
